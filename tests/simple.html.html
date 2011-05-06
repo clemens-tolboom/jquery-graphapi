@@ -1,0 +1,58 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js" ></script>
+    <script type="text/javascript" src="../jquery-graphapi.js" ></script>
+    <script type="text/javascript">
+      jQuery(document).ready(function() {
+        jQuery('.graphapi').graphapi({menu:true});
+      });
+    </script>
+  </head>
+  <body>
+    <div class="graphapi">
+      <edges>
+        <edge from="graphapi-jeresig" to="graphapi-jquery"></edge>
+        <edge from="graphapi-jquery" to="graphapi-kboudloche"></edge>
+        <edge from="graphapi-jquery" to="graphapi-kswedberg"></edge>
+        <edge from="graphapi-jquery" to="graphapi-malsup"></edge>
+      </edges>
+
+      <div class="graphapi-nodes">
+        <div id="graphapi-malsup" class="graphapi-node">
+          <div class="graphapi-title">
+            <img width="50"src="http://discuss.zoho.com/getCustomFile.do?fileId=14737000000006155&forumGroupId=14737000000003003"/>
+            <span></span>
+          </div>
+        </div>
+        <div id="graphapi-kboudloche" class="graphapi-node">
+          <div class="graphapi-title">
+            <img width="50" src="http://discuss.zoho.com/getCustomFile.do?fileId=14737000001135504&forumGroupId=14737000000003003"/>
+          </div>
+        </div>
+        <div id="graphapi-kswedberg" class="graphapi-node">
+          <div class="graphapi-title">
+            <img width="50"
+                 src="http://discuss.zoho.com/getCustomFile.do?fileId=14737000000117762&forumGroupId=14737000000003003"/>
+          </div>
+        </div>
+        <div id="graphapi-jquery" class="graphapi-node">
+          <span class="graphapi-title">
+            <img width="50"
+                 src="http://t3.gstatic.com/images?q=tbn:ANd9GcQ_ofcPZpxG8u2mofzijG1YcmQ9sPb1HAMPTCJrkCKSkwuru6DN"/></span>
+        </div>
+        <div id="graphapi-jeresig" class="graphapi-node">
+          <div class="graphapi-title">
+            <img width="50"
+                 src="http://discuss.zoho.com/getCustomFile.do?fileId=14737000000037276&forumGroupId=14737000000003003"/></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
