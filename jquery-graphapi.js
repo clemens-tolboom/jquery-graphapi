@@ -101,9 +101,9 @@
       boundingBox : 200.0,
       boxOverlap : 16.0,
       coulombsLaw : 256000.0,
-      damping : 0.92,
-      hookesLaw : 1.0,
-      compass : 1.0
+      damping : 0.8,
+      hookesLaw : 4.0,
+      compass : 3.0
     },
 
     menu : function($container) {
