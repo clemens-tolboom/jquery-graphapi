@@ -1,0 +1,76 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+
+<style type="text/css">
+.graphapi-container {
+	position: relative;
+	width: 400px;
+	height: 300px;
+	border: 1px solid orange;
+}
+
+.graphapi-node {
+	display: inline;
+	border: 1px dashed red;
+	position: absolute;
+	top: 50px;
+	left: 100px;
+}
+
+.graphapi-node:hover .graphapi-more-info {
+	display: inline;
+}
+
+.graphapi-more-info {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	display: none;
+	float:right;
+}
+
+.graphapi-title {
+	display: inline;
+}
+
+.graphapi-content {
+	display: none;
+}
+
+</style>
+
+<style type="text/css">
+.graphapi-title {
+  background-color: white;
+  border-radius: 15px;
+  border: 1px solid yellowgreen;
+  margin: 5px;
+  padding: 2px;
+  box-shadow: 3px 3px 1px #888;
+}
+
+.graphapi-title .dragging {
+  border: 3px solid #a99;
+  box-shadow: 3px 3px 10px #444;
+}
+
+.graphapi-content {
+  display: none;
+}
+
+</style>
+</head>
+
+<body>
+<div class="graphapi-container">
+	<div class="graphapi-node">
+		<div class="graphapi-more-info">Info</div>
+		<div class="graphapi-title">This is the title of a graph node</div>
+		<div class="graphapi-content">This is the content of a grpah node.</div>
+	</div>
+</div>
+
+</body>
+</html>
