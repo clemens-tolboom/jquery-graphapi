@@ -202,7 +202,7 @@
           $.graphapi.physics.init($(this),
             (opts.initScale * (Math.random() - 1/2)) * opts.width + opts.width/2,
             (opts.initScale * (Math.random() - 1/2)) * opts.height + opts.height/2
-            );
+          );
         }
       }).children('.graphapi-body').hide();
 
@@ -429,7 +429,7 @@
 
         if (r < 0.01) r = 0.01;
 
-        var f = (r-u0);
+        var f = (r-u0) * scale;
         
         var fx = f * rx/r;
         var fy = f * ry/r;
@@ -576,6 +576,7 @@
       var coulombsLaw = opts.coulombsLaw;
       var damping = opts.damping;
       var hookesLaw = opts.hookesLaw;
+      var compass = opts.compass;
 
       var fnAttractToCenter = $.graphapi.physics.attractToCenter;
       var fnBoundingBox = $.graphapi.physics.boundingBox;
@@ -624,8 +625,8 @@
         var to = '#' + $this.attr('to');
         var physics1 = $(from).data('physics');
         var physics2 = $(to).data('physics');
-        if (applyHookesLaw) fnHookesLaw(physics1, physics2);
-        if (applyCompass) fnCompass(physics1, physics2, 0.4);
+        if (applyHookesLaw) fnHookesLaw(physics1, physics2, hookesLaw);
+        if (applyCompass) fnCompass(physics1, physics2, compass);
       });
 
       // Update nodes
