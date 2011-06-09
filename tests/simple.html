@@ -11,7 +11,13 @@ and open the template in the editor.
     <script type="text/javascript" src="../jquery-graphapi.js" ></script>
     <script type="text/javascript">
       jQuery(document).ready(function() {
-        jQuery('.graphapi').graphapi({menu: true});
+        jQuery('.graphapi').graphapi({
+          menu: true,
+          damping : 0.92,
+          hookesLaw : 0.8,
+          compass : 1.0,
+          applyBoxOverlap : true
+        });
       });
     </script>
   </head>
